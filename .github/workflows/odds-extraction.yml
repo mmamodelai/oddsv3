@@ -1,0 +1,70 @@
+name: 🏴‍☠️ LulSec UFC Odds Extraction
+
+on:
+  schedule:
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  extract-odds:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run extractor (headless)
+        env:
+          GITHUB_ACTIONS: 'true'
+          HEADLESS: '1'
+          DEBUG_MODE: ${{ github.event.inputs.debug || 'false' }}
+        run: python OddsMarketCombo.py
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: odds-output
+          path: |
+            OddsMarketCombo.csv
+            OddsMarketCombo.json
+
+  # Optional: show quick stats in logs
+  show-results:
+    needs: extract-odds
+    runs-on: windows-latest
+    if: always()
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: odds-output
+      - name: Print summary
+        run: |
+          python - << 'PY'
+import csv, json, os
+if os.path.exists('OddsMarketCombo.csv'):
+    with open('OddsMarketCombo.csv','r',encoding='utf-8') as f:
+        n = sum(1 for _ in f) - 1
+    print(f"CSV fighters: {max(0,n)}")
+if os.path.exists('OddsMarketCombo.json'):
+    with open('OddsMarketCombo.json','r',encoding='utf-8') as f:
+        data = json.load(f)
+    print('Events:', data.get('total_events'))
+    print('Timestamp:', data.get('extraction_timestamp'))
+PY
