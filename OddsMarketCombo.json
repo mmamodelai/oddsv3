@@ -1,8 +1,8 @@
 {
-  "extraction_timestamp": "2025-08-11T03:16:50.354961",
-  "extraction_run_id": "lulsec_1754882210",
+  "extraction_timestamp": "2025-08-11T04:02:02.334692",
+  "extraction_run_id": "lulsec_1754884922",
   "total_fighters": 26,
-  "total_events": 10,
+  "total_events": 9,
   "sportsbooks": [],
   "events": {
     "UFC 319: Du Plessis vs. Chimaev": {
@@ -11,27 +11,27 @@
       "event_id": "6488",
       "event_date": "2025-08-16"
     },
-    "UFC Fight Night 257: Walker vs. Zhang": {
-      "event_url": "https://fightodds.io/mma-events/6511/ufc-fight-night-257-walker-vs-zhang",
-      "odds_url": "https://fightodds.io/mma-events/6511/ufc-fight-night-257-walker-vs-zhang/odds",
+    "UFC Fight Night: Walker vs. Zhang": {
+      "event_url": "https://fightodds.io/mma-events/6511/ufc-fight-night-walker-vs-zhang",
+      "odds_url": "https://fightodds.io/mma-events/6511/ufc-fight-night-walker-vs-zhang/odds",
       "event_id": "6511",
       "event_date": "2025-08-23"
     },
-    "UFC Fight Night 258: Imavov vs. Borralho": {
-      "event_url": "https://fightodds.io/mma-events/6547/ufc-fight-night-258-imavov-vs-borralho",
-      "odds_url": "https://fightodds.io/mma-events/6547/ufc-fight-night-258-imavov-vs-borralho/odds",
+    "UFC Fight Night: Imavov vs. Borralho": {
+      "event_url": "https://fightodds.io/mma-events/6547/ufc-fight-night-imavov-vs-borralho",
+      "odds_url": "https://fightodds.io/mma-events/6547/ufc-fight-night-imavov-vs-borralho/odds",
       "event_id": "6547",
       "event_date": "2025-09-06"
     },
-    "UFC Fight Night 259: Noche UFC: Lopes vs. Silva": {
-      "event_url": "https://fightodds.io/mma-events/6414/ufc-fight-night-259-noche-ufc-lopes-vs-silva",
-      "odds_url": "https://fightodds.io/mma-events/6414/ufc-fight-night-259-noche-ufc-lopes-vs-silva/odds",
+    "UFC Fight Night: Lopes vs. Silva": {
+      "event_url": "https://fightodds.io/mma-events/6414/ufc-fight-night-lopes-vs-silva",
+      "odds_url": "https://fightodds.io/mma-events/6414/ufc-fight-night-lopes-vs-silva/odds",
       "event_id": "6414",
       "event_date": "2025-09-13"
     },
-    "UFC Fight Night 260: Ulberg vs. Reyes": {
-      "event_url": "https://fightodds.io/mma-events/6602/ufc-fight-night-260-ulberg-vs-reyes",
-      "odds_url": "https://fightodds.io/mma-events/6602/ufc-fight-night-260-ulberg-vs-reyes/odds",
+    "UFC Fight Night: Ulberg vs. Reyes": {
+      "event_url": "https://fightodds.io/mma-events/6602/ufc-fight-night-ulberg-vs-reyes",
+      "odds_url": "https://fightodds.io/mma-events/6602/ufc-fight-night-ulberg-vs-reyes/odds",
       "event_id": "6602",
       "event_date": "2025-09-27"
     },
@@ -41,15 +41,15 @@
       "event_id": "6552",
       "event_date": "2025-10-04"
     },
-    "UFC Fight Night 261: Oliveira vs. Fiziev": {
-      "event_url": "https://fightodds.io/mma-events/6619/ufc-fight-night-261-oliveira-vs-fiziev",
-      "odds_url": "https://fightodds.io/mma-events/6619/ufc-fight-night-261-oliveira-vs-fiziev/odds",
+    "UFC Fight Night: Oliveira vs. Fiziev": {
+      "event_url": "https://fightodds.io/mma-events/6619/ufc-fight-night-oliveira-vs-fiziev",
+      "odds_url": "https://fightodds.io/mma-events/6619/ufc-fight-night-oliveira-vs-fiziev/odds",
       "event_id": "6619",
       "event_date": "2025-10-11"
     },
-    "UFC Fight Night 262: Oct. 18": {
-      "event_url": "https://fightodds.io/mma-events/6553/ufc-fight-night-262-oct-18",
-      "odds_url": "https://fightodds.io/mma-events/6553/ufc-fight-night-262-oct-18/odds",
+    "UFC Fight Night": {
+      "event_url": "https://fightodds.io/mma-events/6553/ufc-fight-night",
+      "odds_url": "https://fightodds.io/mma-events/6553/ufc-fight-night/odds",
       "event_id": "6553",
       "event_date": "2025-10-18"
     },
@@ -58,12 +58,6 @@
       "odds_url": "https://fightodds.io/mma-events/6593/ufc-321-aspinall-vs-gane/odds",
       "event_id": "6593",
       "event_date": "2025-10-25"
-    },
-    "UFC Fight Night: Nov. 22": {
-      "event_url": "https://fightodds.io/mma-events/6603/ufc-fight-night-nov-22",
-      "odds_url": "https://fightodds.io/mma-events/6603/ufc-fight-night-nov-22/odds",
-      "event_id": "6603",
-      "event_date": "2025-11-22"
     }
   },
   "fighters": [
@@ -108,14 +102,6 @@
       "source": "fightodds.io"
     },
     {
-      "fighter": "fernando vs. latu",
-      "odds": {},
-      "fight_order": 9,
-      "event": "UFC 319: Du Plessis vs. Chimaev",
-      "event_date": "2025-08-16",
-      "source": "fightodds.io"
-    },
-    {
       "fighter": "home",
       "odds": {},
       "fight_order": 7,
@@ -132,9 +118,17 @@
       "source": "fightodds.io"
     },
     {
-      "fighter": "home odds promotions events terms upcoming events dana white's contender series: contender series 2025: week 1 one friday fights 120 lfa 214: fernando vs. latu recent events anthony pettis fc 19: virignia fight night iv ces 81: carvalho vs. bohn ksw 109: kuberski vs. paczuski upcoming fights bouafia vs. santana fernando vs. latu davis vs. rabadanov gasanov vs. aryshev piraev vs. vartanyan juarez vs. kamyron du plessis vs. chimaev you must be 18 years old or over to use this site. please bet responsibly.",
+      "fighter": "home odds promotions events terms upcoming events dana white's contender series: contender series 2025: week 1 one friday fights 120 lfa 214: fernando vs. latu recent events anthony pettis fc 19: virignia fight night iv ces 81: carvalho vs. bohn ksw 109: kuberski vs. paczuski upcoming fights bouafia vs. santana or.pitisak vs. pk saenchai davis vs. rabadanov gasanov vs. aryshev fernando vs. latu juarez vs. kamyron du plessis vs. chimaev you must be 18 years old or over to use this site. please bet responsibly.",
       "odds": {},
       "fight_order": 6,
+      "event": "UFC 319: Du Plessis vs. Chimaev",
+      "event_date": "2025-08-16",
+      "source": "fightodds.io"
+    },
+    {
+      "fighter": "or.pitisak vs. pk saenchai",
+      "odds": {},
+      "fight_order": 9,
       "event": "UFC 319: Du Plessis vs. Chimaev",
       "event_date": "2025-08-16",
       "source": "fightodds.io"
@@ -164,66 +158,66 @@
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 257: walker vs. zhang",
+      "fighter": "events ufc ufc fight night: walker vs. zhang",
       "odds": {},
       "fight_order": 3,
-      "event": "UFC Fight Night 257: Walker vs. Zhang",
+      "event": "UFC Fight Night: Walker vs. Zhang",
       "event_date": "2025-08-23",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 257: walker vs. zhang ufc fight night 257: walker vs. zhang event information",
+      "fighter": "events ufc ufc fight night: walker vs. zhang ufc fight night: walker vs. zhang event information",
       "odds": {},
       "fight_order": 2,
-      "event": "UFC Fight Night 257: Walker vs. Zhang",
+      "event": "UFC Fight Night: Walker vs. Zhang",
       "event_date": "2025-08-23",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 258: imavov vs. borralho",
+      "fighter": "events ufc ufc fight night: imavov vs. borralho",
       "odds": {},
       "fight_order": 3,
-      "event": "UFC Fight Night 258: Imavov vs. Borralho",
+      "event": "UFC Fight Night: Imavov vs. Borralho",
       "event_date": "2025-09-06",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 258: imavov vs. borralho ufc fight night 258: imavov vs. borralho event information",
+      "fighter": "events ufc ufc fight night: imavov vs. borralho ufc fight night: imavov vs. borralho event information",
       "odds": {},
       "fight_order": 2,
-      "event": "UFC Fight Night 258: Imavov vs. Borralho",
+      "event": "UFC Fight Night: Imavov vs. Borralho",
       "event_date": "2025-09-06",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 259: noche ufc: lopes vs. silva",
+      "fighter": "events ufc ufc fight night: lopes vs. silva",
       "odds": {},
       "fight_order": 3,
-      "event": "UFC Fight Night 259: Noche UFC: Lopes vs. Silva",
+      "event": "UFC Fight Night: Lopes vs. Silva",
       "event_date": "2025-09-13",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 259: noche ufc: lopes vs. silva ufc fight night 259: noche ufc: lopes vs. silva event information",
+      "fighter": "events ufc ufc fight night: lopes vs. silva ufc fight night: lopes vs. silva event information",
       "odds": {},
       "fight_order": 2,
-      "event": "UFC Fight Night 259: Noche UFC: Lopes vs. Silva",
+      "event": "UFC Fight Night: Lopes vs. Silva",
       "event_date": "2025-09-13",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 260: ulberg vs. reyes",
+      "fighter": "events ufc ufc fight night: ulberg vs. reyes",
       "odds": {},
       "fight_order": 3,
-      "event": "UFC Fight Night 260: Ulberg vs. Reyes",
+      "event": "UFC Fight Night: Ulberg vs. Reyes",
       "event_date": "2025-09-27",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 260: ulberg vs. reyes ufc fight night 260: ulberg vs. reyes event information",
+      "fighter": "events ufc ufc fight night: ulberg vs. reyes ufc fight night: ulberg vs. reyes event information",
       "odds": {},
       "fight_order": 2,
-      "event": "UFC Fight Night 260: Ulberg vs. Reyes",
+      "event": "UFC Fight Night: Ulberg vs. Reyes",
       "event_date": "2025-09-27",
       "source": "fightodds.io"
     },
@@ -244,18 +238,18 @@
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 261: oliveira vs. fiziev",
+      "fighter": "events ufc ufc fight night: oliveira vs. fiziev",
       "odds": {},
       "fight_order": 3,
-      "event": "UFC Fight Night 261: Oliveira vs. Fiziev",
+      "event": "UFC Fight Night: Oliveira vs. Fiziev",
       "event_date": "2025-10-11",
       "source": "fightodds.io"
     },
     {
-      "fighter": "events ufc ufc fight night 261: oliveira vs. fiziev ufc fight night 261: oliveira vs. fiziev event information",
+      "fighter": "events ufc ufc fight night: oliveira vs. fiziev ufc fight night: oliveira vs. fiziev event information",
       "odds": {},
       "fight_order": 2,
-      "event": "UFC Fight Night 261: Oliveira vs. Fiziev",
+      "event": "UFC Fight Night: Oliveira vs. Fiziev",
       "event_date": "2025-10-11",
       "source": "fightodds.io"
     },
