@@ -1126,24 +1126,17 @@ def extract_fight_order_from_card(soup):
     return order_map
 
 def parse_fight_card_names(soup):
-    """Extract a set of fighter names from the event's fight card page."""
-    names = set()
-    # Look for rows with two sides, e.g., 'Fighter 1' vs 'Fighter 2'
-    for row in soup.find_all(['tr','div']):
-        text = row.get_text(' ', strip=True)
-        if not text or 'vs' not in text.lower():
-            continue
-        # Grab up to two anchors/spans that look like names
-        cand = []
-        for el in row.select('a, span, div'):
-            t = el.get_text(' ', strip=True)
-            if t and len(t) > 2 and t.lower() not in ['odds','news','breakdown','info','fights']:
-                cand.append(t)
-            if len(cand) >= 2:
-                break
-        for n in cand[:2]:
-            names.add(n)
-    return names
+    """Extract a set of fighter names from the event's fight card page.
+
+    Implementation reuses the scoped blocks and parsing logic of
+    `extract_fight_order_from_card` to avoid capturing site navigation or
+    unrelated text. Returns a set of normalized lower-case names.
+    """
+    try:
+        order_map = extract_fight_order_from_card(soup)
+        return set(order_map.keys())
+    except Exception:
+        return set()
 
 def extract_fighter_odds(soup, sportsbooks):
     """Extract fighter data with odds from each sportsbook"""
