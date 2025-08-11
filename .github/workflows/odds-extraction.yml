@@ -35,7 +35,9 @@ jobs:
           GITHUB_ACTIONS: 'true'
           HEADLESS: '1'
           DEBUG_MODE: ${{ github.event.inputs.debug || 'false' }}
-        run: python OddsMarketCombo.py
+        run: |
+          chcp 65001 > NUL
+          python OddsMarketCombo.py
 
       - name: Upload outputs
         uses: actions/upload-artifact@v4

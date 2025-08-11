@@ -17,6 +17,13 @@ try:
 except Exception:
     winreg = None
 
+# Ensure UTF-8 stdout on Windows CI to avoid UnicodeEncodeError with emojis/tokens
+try:
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
+
 def odds_market_combo(debug_mode=False):
     """
     LulSec OddsMarketCombo - Clean UFC odds extraction
