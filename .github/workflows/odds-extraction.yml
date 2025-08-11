@@ -55,16 +55,15 @@ jobs:
         with:
           name: odds-output
       - name: Print summary
+        shell: python
         run: |
-          python - << 'PY'
-import csv, json, os
-if os.path.exists('OddsMarketCombo.csv'):
-    with open('OddsMarketCombo.csv','r',encoding='utf-8') as f:
-        n = sum(1 for _ in f) - 1
-    print(f"CSV fighters: {max(0,n)}")
-if os.path.exists('OddsMarketCombo.json'):
-    with open('OddsMarketCombo.json','r',encoding='utf-8') as f:
-        data = json.load(f)
-    print('Events:', data.get('total_events'))
-    print('Timestamp:', data.get('extraction_timestamp'))
-PY
+          import csv, json, os
+          if os.path.exists('OddsMarketCombo.csv'):
+              with open('OddsMarketCombo.csv','r',encoding='utf-8') as f:
+                  n = sum(1 for _ in f) - 1
+              print(f"CSV fighters: {max(0,n)}")
+          if os.path.exists('OddsMarketCombo.json'):
+              with open('OddsMarketCombo.json','r',encoding='utf-8') as f:
+                  data = json.load(f)
+              print('Events:', data.get('total_events'))
+              print('Timestamp:', data.get('extraction_timestamp'))
