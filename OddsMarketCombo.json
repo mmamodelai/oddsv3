@@ -1,6 +1,6 @@
 {
-  "extraction_timestamp": "2025-08-11T11:53:41.808998",
-  "extraction_run_id": "lulsec_1754913221",
+  "extraction_timestamp": "2025-08-11T12:50:57.646139",
+  "extraction_run_id": "lulsec_1754916657",
   "total_fighters": 26,
   "total_events": 9,
   "sportsbooks": [],
@@ -102,6 +102,14 @@
       "source": "fightodds.io"
     },
     {
+      "fighter": "gasanov vs. aryshev",
+      "odds": {},
+      "fight_order": 9,
+      "event": "UFC 319: Du Plessis vs. Chimaev",
+      "event_date": "2025-08-16",
+      "source": "fightodds.io"
+    },
+    {
       "fighter": "home",
       "odds": {},
       "fight_order": 7,
@@ -118,17 +126,9 @@
       "source": "fightodds.io"
     },
     {
-      "fighter": "home odds promotions events terms upcoming events dana white's contender series: contender series 2025: week 1 one friday fights 120 lfa 214: fernando vs. latu recent events anthony pettis fc 19: virignia fight night iv ces 81: carvalho vs. bohn ksw 109: kuberski vs. paczuski upcoming fights bouafia vs. santana or.pitisak vs. pk saenchai davis vs. rabadanov gasanov vs. aryshev fernando vs. latu juarez vs. kamyron du plessis vs. chimaev you must be 18 years old or over to use this site. please bet responsibly.",
+      "fighter": "home odds promotions events terms upcoming events dana white's contender series: contender series 2025: week 1 one friday fights 120 lfa 214: fernando vs. latu recent events anthony pettis fc 19: virignia fight night iv ces 81: carvalho vs. bohn ksw 109: kuberski vs. paczuski upcoming fights bouafia vs. santana gasanov vs. aryshev fernando vs. latu or.pitisak vs. pk saenchai davis vs. rabadanov du plessis vs. chimaev juarez vs. kamyron you must be 18 years old or over to use this site. please bet responsibly.",
       "odds": {},
       "fight_order": 6,
-      "event": "UFC 319: Du Plessis vs. Chimaev",
-      "event_date": "2025-08-16",
-      "source": "fightodds.io"
-    },
-    {
-      "fighter": "or.pitisak vs. pk saenchai",
-      "odds": {},
-      "fight_order": 9,
       "event": "UFC 319: Du Plessis vs. Chimaev",
       "event_date": "2025-08-16",
       "source": "fightodds.io"
