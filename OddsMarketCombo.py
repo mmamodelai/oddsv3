@@ -831,13 +831,18 @@ def extract_event_fighters_from_odds(driver, odds_url, event_name, event_date=''
                     fighters.extend(extract_fighter_odds_from_table(tbl, sportsbooks))
             except Exception:
                 pass
-        # Debug sample of extracted fighter names
-        try:
-            sample_candidates = [f.get('fighter','') for f in fighters[:8]]
-            if sample_candidates:
-                print(f"      🧪 Odds table sample: {sample_candidates}")
-        except Exception:
-            pass
+        # Remove any obviously non-fighter rows from global tables before matching
+        def looks_like_fighter(name: str) -> bool:
+            if not name or len(name) < 3:
+                return False
+            bad_tokens = [
+                'upcoming events', 'recent events', 'promotions', 'sportsbooks', 'about', 'widget',
+                'handicappers', 'tools', 'home', 'events', 'event information', 'dana white', 'contender series',
+                'one championship', 'lfa', 'ksw', 'ces', 'friday fights'
+            ]
+            n = normalize_fighter_name_for_match(name)
+            return not any(bt in n for bt in bad_tokens)
+        fighters = [f for f in fighters if looks_like_fighter(f.get('fighter',''))]
         
         # Build base roster entries (ensures every matchup appears even if odds not yet listed)
         base_entries = []
